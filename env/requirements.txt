@@ -1,0 +1,47 @@
+# =============================================
+# Requirements - Projeto HPC Processamento DICOM
+# TechMed Solutions - Santos Dumont
+# =============================================
+
+# === CORE PARA PROCESSAMENTO DICOM ===
+pydicom==2.4.3              # Leitura/escrita de arquivos DICOM
+numpy==1.24.3               # Computação numérica eficiente
+Pillow==10.0.1              # Processamento e compressão de imagens
+
+# === PARALELISMO MPI ===
+mpi4py==3.1.5               # Interface Python para MPI
+openmpi==4.1.5              # Implementação MPI (via system)
+
+# === GPU/CUDA (OPCIONAL) ===
+torch==2.1.1                # PyTorch para possível uso GPU
+torchvision==0.16.1         # Visão computacional
+#cudatoolkit=11.8           # Instalar via conda no SD
+#cudnn=8.6.0                # Instalar via conda no SD
+
+# === UTILITIES E PROFILING ===
+psutil==5.9.6               # Monitoramento de recursos
+memory-profiler==0.60.0     # Perfilamento de memória
+matplotlib==3.7.2           # Gráficos para análise de resultados
+pandas==2.0.3               # Análise de dados e estatísticas
+
+# === TESTING E VALIDAÇÃO ===
+pytest==7.4.2               # Framework de testes
+pytest-mpi==0.6             # Testes com MPI
+pytest-benchmark==4.0.0     # Benchmarking de performance
+
+# === DOCUMENTAÇÃO ===
+sphinx==7.2.6               # Documentação do projeto
+sphinx-rtd-theme==2.0.0     # Tema para documentação
+
+# === DEVELOPMENT ===
+black==23.9.1               # Formatação de código
+flake8==6.1.0               # Linting
+mypy==1.5.1                 # Checagem de tipos
+jupyter==1.0.0              # Notebooks para experimentação
+
+# === SANTOS DUMONT SPECIFIC ===
+# Os módulos abaixo devem ser carregados via 'module load' no SD
+# module load python/3.10.8
+# module load openmpi/4.1.5
+# module load cuda/11.8
+# module load gcc/11.3.0
