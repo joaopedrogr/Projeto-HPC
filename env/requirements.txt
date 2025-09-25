@@ -1,4 +1,0 @@
-mpi4py==3.1.4
-networkx==3.1
-numpy==1.25.2
-matplotlib==3.8.1
